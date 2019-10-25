@@ -1,5 +1,5 @@
 FROM python:3.8-alpine
-WROKDIR /code
+WORKDIR /code
 ENV FLASK_APP receive_socket.py
 ENV FLASK_RUN_HOST 192.168.88.156
 RUN apk add --no-cache gcc musl-dev linux-headers
